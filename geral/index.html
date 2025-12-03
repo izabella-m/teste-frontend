@@ -852,24 +852,43 @@
 	<link rel="stylesheet" type="text/css" href="osx.css">
 
 <div class="box pesquisa_pergunta">
-
     <div class="title">
         <h2>Pesquisa</h2>
-        <img src="title-hide.gif" alt="">    </div>
+        <img src="title-hide.gif" alt=""> 
+    </div>
+    <div class="head-card">
+      <h3>Nome da pesquisa</h3>
+      <div class="head-info">
+        <div class="info-section">
+          <ul>
+            <li>Data: <span class="emphasis">12/02/2025</span></li><hr class="vertical-divider">
+            <li>Enviar pesquisa para: <span class="emphasis">Só participantes credenciados</span></li><hr class="vertical-divider">
+            <li>
+              <div class="availability-tag">
+                <div class="cirlce-availability"></div>
+                <p>Disponível</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="buttons-section">
+          <button>Editar</button>
+          <button>Pré-visualizar</button>
+        </div>
+      </div>
 
+    </div>
     <div class="content forms">
-      	
       	<div class="mensagem">
 	                </div> 
         <div class="actions">
             <ul>
                 <li><a href="https://doity.com.br/admin/pesquisas_perguntas/add/1402">Adicionar pergunta</a></li>
-            	            		            		<li><a href="#" data-toggle="tooltip" title="Pesquisa já foi enviada. Não é possível enviar a pesquisa novamente" class="link_desabilitado">Enviar pesquisa de satisfação</a></li>
-            	            	            		<li><a href="https://doity.com.br/admin/pesquisas_resultados/index/1402">Resultados da pesquisa de satisfação</a></li>
-            	
+                <li><a href="#" data-toggle="tooltip" title="Pesquisa já foi enviada. Não é possível enviar a pesquisa novamente" class="link_desabilitado">Enviar pesquisa de satisfação</a></li>
+                <li><a href="https://doity.com.br/admin/pesquisas_resultados/index/1402">Resultados da pesquisa de satisfação</a></li>
             </ul>
         </div>
-        
+    
         <div class="painel-info-artigos">
         	<p>Nome: <strong>Pesquisa de Qualidade do Evento</strong></p>
         	<p>Data de disponibilidade: <strong>01/12/2025</strong></p>
@@ -1026,6 +1045,88 @@
 </div>
 
 <style>
+
+  body {
+    padding: 0%;
+    margin: 0%;
+  }
+  .head-card {
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .head-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info-section {
+    display: flex;
+
+  }
+
+  .info-section ul {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    gap: 15px;
+
+  }
+
+  .info-section ul li {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .emphasis {
+    color: #18181B;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .vertical-divider {
+    color: #D3D3D3;
+    border: solid 1px;
+    width: 0px;
+    height: 26px;
+  }
+
+  .availability-tag {
+    width: 91px;
+    height: 24px;
+    background-color: #E7FFE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+  }
+
+  .cirlce-availability {
+    width: 11px;
+    height: 11px; 
+    background-color: #66BB33; 
+    border-radius: 50%; 
+  }
+
+  .availability-tag p{
+    color: #66BB33;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+  
+  .buttons-section button{
+    background-color: #F9FAFB;
+    border: #CDD1D9 solid 1px;
+    border-radius: 8px;
+    padding: 10px 25px 10px 25px;
+  }
+ 
+
    #modal-info-feedback-pos-evento{
         border: none;
         max-width: 500px;
@@ -1075,22 +1176,7 @@
     #responder-mais-tarde-feedback-pos-modal{
         margin-left: 80px;
     }
-</style>
 
-
-
-
-
-
-            
-            
-	
-
-	
-
-
-
-<style>
     .noBreadcrumbPaddingTop {
         padding-top: 0 !important;
     }
