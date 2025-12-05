@@ -1111,6 +1111,13 @@ cancelBtn.addEventListener("click", function () {
     padding: 0%;
     margin: 0%;
   }
+
+  .pesquisa_pergunta {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
   .head-card {
     background-color: #F6F6F6;
     border-radius: 10px;
@@ -1190,6 +1197,51 @@ cancelBtn.addEventListener("click", function () {
     font-weight: 600;
     color: #414651;
   }
+
+@media (max-width: 900px) {
+
+.head-card {
+  padding: 15px;
+}
+
+.head-card h3 {
+  font-size: 1rem;
+}
+
+.head-info {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-section ul {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.vertical-divider {
+  display: none;
+}
+
+.availability-tag {
+  width: auto;
+  padding: 4px 10px;
+  height: auto;
+}
+
+.buttons-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons-section button {
+  width: 100%;
+  padding: 12px;
+}
+}
+
 
   .questions-card table {
     border-collapse: separate;
