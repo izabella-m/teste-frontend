@@ -878,7 +878,7 @@
       </div>
     </div>
 
-    <div class="questions-card">
+    <!-- <div class="questions-card">
       <table>
         <thead >
           <tr>
@@ -909,8 +909,19 @@
           </tr>                      
         </tbody>
       </table>
-    </div>
-
+    </div> -->
+    <div class="questions-card">
+        <table>
+          <thead>
+            <tr>
+              <th>Perguntas<span class="emphasis-number">(numero)</span></th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="questions-body"></tbody>
+        </table>
+      </div>
+      
     <div>
       <button id="add-question-btn" class="button-add-question">
         <a href="#">Adicionar pergunta</a>
@@ -925,7 +936,7 @@
       <input id="question-input" type="text" class="input-question"/>
     
       <div class="checkbox-area">
-        <input id="checkbox-obrigatorio" type="checkbox" />
+        <input id="checkbox-obrigatorio" type="checkbox" style="background-color: #FF2B34;"/>
         <label for="checkbox-obrigatorio">Obrigatório</label>
       </div>
     
@@ -978,9 +989,36 @@
 </div>
 
 <script>
-  const addBtn = document.getElementById("add-question-btn");
+const addBtn = document.getElementById("add-question-btn");
 const form = document.getElementById("question-form");
 const cancelBtn = document.getElementById("cancel-btn");
+
+const perguntas = [
+  { id: 1, texto: "Como você avaliaria sua experiência geral no evento?" },
+  { id: 2, texto: "O conteúdo apresentado foi relevante para você?", cinza: true },
+  { id: 3, texto: 'A qualidade dos palestrantes foi satisfatória? <span class="obrigatorio">*</span>' },
+  { id: 4, texto: "Como você avalia a organização do evento?", cinza: true },
+  { id: 5, texto: "Pergunta exemplo" }
+];
+
+const tbody = document.getElementById("questions-body");
+
+perguntas.forEach((p, index) => {
+  const tr = document.createElement("tr");
+
+  tr.innerHTML = `
+    <td data-th="Nome">${p.texto}</td>
+
+    <td data-th="Ações" class="acoes">
+      <span class="green action-edit">Editar</span>
+      &nbsp;
+      <span class="red action-delete">Excluir</span>
+    </td>
+  `;
+
+  tbody.appendChild(tr);
+});
+
 
 
 addBtn.addEventListener("click", function (event) {
@@ -1144,9 +1182,13 @@ cancelBtn.addEventListener("click", function () {
   
   .buttons-section button{
     background-color: #F9FAFB;
+    box-sizing: border-box;
     border: #CDD1D9 solid 1px;
     border-radius: 8px;
     padding: 10px 25px 10px 25px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #414651;
   }
 
   .questions-card table {
@@ -1205,10 +1247,10 @@ cancelBtn.addEventListener("click", function () {
   }
 
   .label-question {
-  font-size: 1rem;
-  font-weight: 500;
-  display: block;
-  margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 4px;
   }
 
   .required-asterisk {
@@ -1219,8 +1261,8 @@ cancelBtn.addEventListener("click", function () {
     width: 100%;
     padding: 6px 8px;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #D5D7DA;
+    border-radius: 8px;
   }
 
   .checkbox-area {
@@ -1229,6 +1271,11 @@ cancelBtn.addEventListener("click", function () {
     align-items: center;
     gap: 6px;
     font-size: 0.95rem;
+    font-weight: 400;
+  }
+
+  .checkbox-area label {
+    font-size: #4E5666;
   }
 
   .divider {
@@ -1237,27 +1284,36 @@ cancelBtn.addEventListener("click", function () {
     border-top: 1px solid #CCCCCC;
   }
 
-  .action-row {
-  display: flex;
-  justify-content: space-between; 
-  margin-top: 16px;
-}
+    .action-row {
+        display: flex;
+        justify-content: space-between; 
+        margin-top: 16px;
+    }
+
+    .action-row-questions {
+        display: flex;
+        justify-content: space-between;
+    }
 
   .cancel-button {
-    background: #f3f3f3;
-    border: 1px solid #ccc;
+    background-color: #F9FAFB;
+    border: 1px solid #CDD1D9;
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 0.875rem;
   }
 
   .confirm-button {
-    background: #4CAF50;
+    background: #FF2B34;
     color: white;
     border: none;
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
   }
 
 
