@@ -4,7 +4,7 @@
 
 .box .tabs ul.tabnav {
 	display : inline-block;
-	background-image : url("tabs-title.gif");
+	background-image : url("../img/tabs-title-off.gif");
 	background-position : left top;
 	background-repeat : repeat-x;
 	margin : 0;
@@ -24,7 +24,7 @@
 
 .box .tabs .tabnav li a {
 	float : left;
-	background-image : url("tabs-title-off.gif");
+	background-image : url("../img/tabs-title-off.gif");
 	background-position : left top;
 	background-repeat : repeat-x;
 	padding : 6px 20px 0;
@@ -36,7 +36,7 @@
 }
 
 .box .tabs .tabs .tabnav li a:hover, .box .tabs .tabnav li a:active, .box .tabs .tabnav li.ui-tabs-selected a {
-	background-image : url("tabs-title-on.gif");
+	background-image : url("../img/tabs-title-on.gif");
 	text-decoration : none;
 }
 	

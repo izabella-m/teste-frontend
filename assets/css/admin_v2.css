@@ -1852,7 +1852,7 @@ div.actions {
 }
 
 #admin-nav li.disabled img{
-    filter: url("c975f9799e6135f7b2c437b4d67a45998c33274a.svg"); /* Firefox 10+, Firefox on Android */
+    filter: url("../icons/c975f9799e6135f7b2c437b4d67a45998c33274a.svg"); /* Firefox 10+, Firefox on Android */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
@@ -3048,7 +3048,7 @@ th.acoes {
     bottom: unset !important;
     height: 26px !important;
     background-color: unset;
-    background-image: url("plus.png");
+    background-image: url("../img/plus.png");
     background-size: 14px;
     background-position: center;
     background-repeat: no-repeat;

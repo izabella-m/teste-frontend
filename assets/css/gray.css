@@ -17,14 +17,14 @@ a, a:link, a:active, a:visited, .box .title h2, .menu ul li.current a, .menu ul 
     background-color: #6AA500;
 }
 .row button span {
-    background-image: url("btn.gif");
+    background-image: url("../img/btn.gif");
     border: 1px solid #566F29;
 }
 .search button span, .box .pages button span {
-    background-image: url("btn-small.gif");
+    background-image: url("../img/btn-small.gif");
     border: 1px solid #566F29;
 }
 .box .row div.btn-upload {
-    background-image: url("upload.gif");
+    background-image: url("../img/upload.gif");
     border: 1px solid #566F29;
 }

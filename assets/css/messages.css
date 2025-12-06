@@ -257,7 +257,7 @@
     font-family: 'FontAwesome';
     font-size: 20px;
     content: '';
-    background-image: url("messageClose.svg");
+    background-image: url("../icons/messageClose.svg");
     background-position: center;
     cursor: pointer;
 }

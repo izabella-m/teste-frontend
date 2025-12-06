@@ -1034,7 +1034,7 @@ body {
     height: 24px;
     transform: translate3d(0, -50%, 0);
     content: '';
-    background-image: url("FlashMes-success.svg");
+    background-image: url("../icons/FlashMes-success.svg");
 }
 
 /* PAGINATION */

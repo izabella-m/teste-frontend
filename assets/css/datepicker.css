@@ -119,7 +119,7 @@ div.dp-popup div.dp-nav-prev {
 
 div.dp-popup div a.dp-nav-prev-month, div.dp-popup div a.dp-prev-next-month:link, div.dp-popup div a.dp-prev-next-month:active, div.dp-popup div a.dp-prev-next-month:visited {
 	float: left;
-	background-image : url("date-prev.gif");
+	background-image : url("../img/date-prev.gif");
 	background-repeat : no-repeat;
 	overflow : hidden;
 	margin : 0 0 0 5px;
@@ -129,7 +129,7 @@ div.dp-popup div a.dp-nav-prev-month, div.dp-popup div a.dp-prev-next-month:link
 
 div.dp-popup div a.dp-nav-prev-year, div.dp-popup div a.dp-nav-prev-year:link, div.dp-popup div a.dp-nav-prev-year:active, div.dp-popup div a.dp-nav-prev-year:visited{
 	float: left;
-	background-image : url("date-prev.gif");
+	background-image : url("../img/date-prev.gif");
 	background-repeat : no-repeat;
 	overflow : hidden;
 	width : 11px;
@@ -152,7 +152,7 @@ div.dp-popup div.dp-nav-next {
 }
 div.dp-popup div a.dp-nav-next-month, div.dp-popup div a.dp-nav-next-month:link, div.dp-popup div a.dp-nav-next-month:active, div.dp-popup div a.dp-nav-next-month:visited{
 	float: right;
-	background-image : url("date-next.gif");
+	background-image : url("../img/date-next.gif");
 	background-repeat : no-repeat;
 	overflow : hidden;
 	margin : 0 5px 0 0;
@@ -162,7 +162,7 @@ div.dp-popup div a.dp-nav-next-month, div.dp-popup div a.dp-nav-next-month:link,
 
 div.dp-popup div a.dp-nav-next-year, div.dp-popup div a.dp-nav-next-year:link, div.dp-popup div a.dp-nav-next-year:active, div.dp-popup div a.dp-nav-next-year:visited{
 	float: right;
-	background-image : url("date-next.gif");
+	background-image : url("../img/date-next.gif");
 	background-repeat : no-repeat;
 	overflow : hidden;
 	width : 11px;
