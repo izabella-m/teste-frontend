@@ -22,3 +22,5 @@
 @import 'wysiwyg-editor.css';
 @import 'wysiwyg.css';
 @import 'wysiwyg.modal.css';
+@import 'global.css';
+@import 'pages/editar-pesquisa.css'

@@ -1,0 +1,38 @@
+.required-asterisk {
+  color: red;
+}
+
+.classicLabelInupt {
+  font-weight: 500;
+  font-size: 0.75vh;
+  color: #414651;
+}
+
+.classic-grey-button {
+  border: #CDD1D9 solid 1px;
+  border-radius: 8px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+}
+
+.classic-red-button {
+  background: #FF2B34;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.classic-grey-button a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.action-row-questions {
+  display: flex;
+  justify-content: space-between;
+}

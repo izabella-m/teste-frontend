@@ -1,0 +1,11 @@
+.horizontal-line {
+  background-color: #CCCCCC;
+  height: 1px;
+  margin: 0px 10px 0px 10px;
+}
+
+.label-radio-input {
+  font-size: 0.75vh;
+  font-weight: 400;
+  color: #4A4A4A;
+}
