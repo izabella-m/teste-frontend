@@ -854,8 +854,7 @@
       </button>
     </div>
     
-    <div id="question-form" style="display: none; margin-top: 16px;">
-      
+    <div id="question-form" style="display: none;">
       <label for="question-input" class="label-question">
         Pergunta <span class="required-asterisk">*</span>
       </label>
@@ -873,28 +872,27 @@
         <button id="confirm-btn" class="classic-red-button">Adicionar</button>
       </div>
     </div>
-    
+</div>
+<div class="submit-search">
+    <button class="classic-red-button">Enviar pesquisa</button>
 </div>
 
         	
  <!-- MENSAGEM PERGUNTANDO SE DESEJA ENVIAR PARA E-MAIL PARA OS PARTICIPANTES INFORMANDO QUE O CERTIFICADO ESTÁ LIBERADO -->
-<div id="container">
+<!-- <div id="container">
     <div id="content">
     
-<!-- modal content -->
 <div id="osx-modal-content">
     <div id="osx-modal-title">Atenção:</div>
     <div id="osx-modal-data">
         <p>Você só poderá enviar essa pesquisa uma única vez.<br>
         Conforme você configurou, ela será enviada para todos os <b>confirmados</b> no evento.
                 </p>
-        <div class="submit">
-	        <a href="https://doity.com.br/admin/pesquisas/index/279481" id="apenas-liberar" style="width: 70px; float: left; margin: 10px 10px;" class="osx-acao-secundaria">Cancelar</a>			<a href="https://doity.com.br/admin/pesquisas/enviar/1402" id="liberar-e-enviar" style="width: 110px; float: right; margin: 10px 10px;" class="osx-acao-principal">Enviar pesquisa</a>        </div>
 
     </div>
 </div>
     </div>
-</div>
+</div> -->
                         </div>
                     <div class="footer">
                         <div id="footer">
@@ -1043,245 +1041,11 @@
 </div>
 
 <style>
-
   body {
     padding: 0%;
     margin: 0%;
   }
 
-  .pesquisa_pergunta {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .head-card {
-    background-color: #F6F6F6;
-    border-radius: 10px;
-    padding: 20px;
-  }
-
-  .head-info {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .info-section {
-    display: flex;
-
-  }
-
-  .info-section ul {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    gap: 15px;
-
-  }
-
-  .info-section ul li {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .emphasis {
-    color: #18181B;
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-
-  .vertical-divider {
-    color: #D3D3D3;
-    border: solid 1px;
-    width: 0px;
-    height: 26px;
-  }
-
-  .availability-tag {
-    width: 91px;
-    height: 24px;
-    background-color: #E7FFE1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    border-radius: 20px;
-  }
-
-  .cirlce-availability {
-    width: 11px;
-    height: 11px; 
-    background-color: #66BB33; 
-    border-radius: 50%; 
-  }
-
-  .availability-tag p{
-    color: #66BB33;
-    font-weight: 400;
-    font-size: 0.75rem;
-  }
-  
-  .buttons-section button{
-    background-color: #F9FAFB;
-    box-sizing: border-box;
-    border: #CDD1D9 solid 1px;
-    border-radius: 8px;
-    padding: 10px 25px 10px 25px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #414651;
-  }
-
-@media (max-width: 900px) {
-
-.head-card {
-  padding: 15px;
-}
-
-.head-card h3 {
-  font-size: 1rem;
-}
-
-.head-info {
-  flex-direction: column;
-  gap: 25px;
-}
-
-.info-section ul {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.vertical-divider {
-  display: none;
-}
-
-.availability-tag {
-  width: auto;
-  padding: 4px 10px;
-  height: auto;
-}
-
-.buttons-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.buttons-section button {
-  width: 100%;
-  padding: 12px;
-}
-}
-
-
-  .questions-card table {
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 8px;
-    border: 1px solid #EBEBEB;
-    overflow: hidden;
-  }
-  .questions-card table thead th {
-    background-color: #F5F5F5; 
-    color: #4A4A4A;
-    text-align: left;
-    font-size: 0.8125rem; 
-    font-weight: 600;
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #EBEBEB; 
-  }
-
-  .questions-card table tbody td {
-  font-size: 0.75rem; 
-  color: #4A4A4A;
-  padding: 12px 16px; 
-  background-color: #FFFFFF !important;
-  border-bottom: 1px solid #EBEBEB;
-  }
-  .questions-card table tbody td:nth-child(2) {
-    text-align: right;
-  }
-
-  .questions-card table td,
-  .questions-card table th {
-    border-right: none;
-  }
-
-  .questions-card table tbody tr:last-child td {
-    border-bottom: none;
-  }
-
-  .emphasis-number {
-    color: #4A4A4A;
-    color: #777777;
-  }
-  
-
-
-
-
-  .label-question {
-    font-size: 1rem;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 4px;
-  }
-
-  .input-question {
-    width: 100%;
-    padding: 6px 8px;
-    font-size: 1rem;
-    border: 1px solid #D5D7DA;
-    border-radius: 8px;
-  }
-
-  .checkbox-area {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.95rem;
-    font-weight: 400;
-  }
-
-  .checkbox-area label {
-    font-size: #4E5666;
-  }
-
-  .divider {
-    margin-top: 16px;
-    border: none;
-    border-top: 1px solid #CCCCCC;
-  }
-
-    .action-row {
-        display: flex;
-        justify-content: space-between; 
-        margin-top: 16px;
-    }
-
-
-
-  .cancel-button {
-    background-color: #F9FAFB;
-    border: 1px solid #CDD1D9;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.875rem;
-  }
-
-
-    .noBreadcrumbPaddingTop {
-        padding-top: 0 !important;
-    }
-</>
+</style>
 
 </body></html>
