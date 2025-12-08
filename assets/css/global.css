@@ -1,3 +1,7 @@
+* {
+  font-family: Inter;
+}
+
 .required-asterisk {
   color: red;
 }
@@ -185,4 +189,18 @@ cursor: pointer;
     .content_wrapper {
         flex-direction: column;
     }
+}
+
+.divider {
+  margin-top: 16px;
+  border: none;
+  border-top: 1px solid #CCCCCC;
+}
+
+.textareaInputSearch {
+  width: 100%;
+  border: 1px solid #D5D7DA;
+  border-radius: 8px;
+  resize: none;
+  padding: 8px;
 }

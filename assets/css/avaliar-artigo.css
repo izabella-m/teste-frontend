@@ -249,8 +249,7 @@ table th{
     width: 32px;
     height: 33px;
     margin-right: 5px;
-    background: url("estrela-pesquisa.png") 0 0px;
-
+    background: url('../img/estrela-pesquisa.png') 0 0px;
 }
 
 .trabalho-comentado{
@@ -384,7 +383,7 @@ header {
 
 /*Avaliar apresentação*/
 .container-avaliacao-apresentacao {
-    max-width: 60em;
+    width: 80%;
     margin: 0 auto;
     background-color: #fff;
     padding: 35px 40px;

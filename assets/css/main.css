@@ -23,4 +23,9 @@
 @import 'wysiwyg.css';
 @import 'wysiwyg.modal.css';
 @import 'global.css';
-@import 'pages/editar-pesquisa.css'
+@import 'pages/editar-pesquisa.css';
+@import 'avaliar-artigo.css';
+@import 'font-awesome.min-1.css';
+@import 'avaliar-artigo.css';
+@import 'bootstrap.min.css';
+@import 'pages/preview-pesquisa.css';
