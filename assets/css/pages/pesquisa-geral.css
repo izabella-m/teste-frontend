@@ -74,24 +74,19 @@ body {
   background-color: #D3D3D3;
 }
 
-.availability-tag {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 2px;
-}
 
 .cirlce-availability {
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
-  background: #00C851;
+  background: #66BB33;
 }
 
+
 .availability-tag p {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #18181B;
+  font-size: 12px;
+  font-weight: 400;
+  color: #66BB33;
   margin: 0;
 }
 
@@ -106,17 +101,30 @@ body {
   border-radius: 20px;
 }
 
-.cirlce-availability {
+
+.cirlce-availability-unavailable {
   width: 11px;
   height: 11px;
-  background-color: #66BB33;
   border-radius: 50%;
+  background: #6a6a6a;
 }
 
-.availability-tag p {
-  color: #66BB33;
+.availability-tag-unavailable p {
+  font-size: 12px;
   font-weight: 400;
-  font-size: 0.75rem;
+  color: #6a6a6a;
+  margin: 0;
+}
+
+.availability-tag-unavailable {
+  width: 91px;
+  height: 24px;
+  background-color: #c9cac9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
 }
 
 .buttons-section button {
