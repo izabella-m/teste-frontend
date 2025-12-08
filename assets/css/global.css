@@ -32,8 +32,9 @@
 
 .classic-grey-button a {
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 600;
+  color: #414651;
 }
 
 .action-row-questions {
@@ -203,4 +204,17 @@ cursor: pointer;
   border-radius: 8px;
   resize: none;
   padding: 8px;
+}
+
+.__headbar {
+  border-bottom: none;
+}
+.holder {
+  margin: 96px 0 0 0;
+  height: calc(100vh - 96px);
+}
+
+
+.mensagem {
+  margin: 10px 0 0 0;
 }
