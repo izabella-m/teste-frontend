@@ -23,4 +23,5 @@
 @import 'wysiwyg.css';
 @import 'wysiwyg.modal.css';
 @import 'global.css';
-@import 'pages/editar-pesquisa.css'
+@import 'pages/editar-pesquisa.css';
+@import 'pages/pesquisa-geral.css'
