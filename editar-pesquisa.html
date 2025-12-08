@@ -742,13 +742,6 @@
 
 
 
-    .__headbar {
-        border-bottom: none;
-    }
-    .holder {
-        margin: 96px 0 0 0;
-        height: calc(100vh - 96px);
-    }
     
     
     </style>
@@ -763,72 +756,63 @@
           <div class="content forms config_pesquisa">
               <div class="mensagem">
           </div>
-            <!-- <input type="hidden" name="data[Pesquisa][id]" value="1402" id="PesquisaId"> -->
-              <div>
-                  <label class="classicLabelInupt" for="PesquisaNome">Nome<span class="required-asterisk">*</span></label>
-                  <input class="inputSearch" name="data[Pesquisa][nome]" value="Pesquisa de Qualidade do Evento" maxlength="255" type="text" id="PesquisaNome" required="required">
-              </div>
-              <div>
-                  <label class="classicLabelInupt" for="PesquisaDescricao">Descrição<span class="required-asterisk">*</span></label>
-                  <textarea class="textareaInputSearch" name="data[Pesquisa][descricao]" cols="30" rows="6" id="PesquisaDescricao"></textarea>
-              </div>
-              <!-- <div>
-                  <label class="labelInupt" for="PesquisaDataDisponivel">Data de início da pesquisa*</label>
-                  <input class="inputSearch" name="data[Pesquisa][data_disponivel]" value="01/12/2025" type="text" id="PesquisaDataDisponivel" required="required">
-              </div> 
-              <div>
-                <label class="labelInupt" for="PesquisaDataTermino">Data término da pesquisa*</label>
-                <input class="inputSearch" name="data[Pesquisa][data_termino]" value="31/12/2025" type="text" id="PesquisaDataTermino" required="required">
-              </div>-->
-
-              <h3 class="classicLabelInupt">Período</h3>
-              <div class="row-datas">
-                <div class="input-wrapper">
-                  <input 
-                    class="inputSearch"
-                    style="box-shadow: 0px 1px 2px rgba(10, 13, 18, 0.05);"
-                    id="PesquisaDataDisponivel"
-                    type="text"
-                    placeholder="Data de início"
-                  >
-                </div>
-                <div class="input-wrapper">
-                  <input 
-                    class="inputSearch"
-                    style="box-shadow: 0px 1px 2px rgba(10, 13, 18, 0.05);"
-                    name="data[Pesquisa][data_termino]"
-                    id="PesquisaDataDisponivel"
-                    type="text"
-                    placeholder="Data de início"
-                    id="PesquisaDataTermino"
-                    required="required"
-                  >
-                </div>
-              </div>
-              
-      
-            
-              
-              <div class="availableCheckbox">
-                  <input type="hidden" name="data[Pesquisa][ativo]" id="PesquisaAtivo_" value="0">
-                  <input type="checkbox" name="data[Pesquisa][ativo]" checked="checked" value="1" id="PesquisaAtivo">
-                  <label for="PesquisaAtivo">Disponível</label>
-              </div>
-              <div class="optionsToSend">
+          <div style="margin-bottom: 10px;">
+              <label class="classicLabelInupt"  for="PesquisaNome">Nome<span class="required-asterisk">*</span></label>
+              <input class="inputSearch" name="data[Pesquisa][nome]" value="Pesquisa de Qualidade do Evento" maxlength="255" type="text" id="PesquisaNome" required="required">
+          </div>
+          <div>
+              <label class="classicLabelInupt" for="PesquisaDescricao">Descrição<span class="required-asterisk">*</span></label>
+              <textarea class="textareaInputSearch" name="data[Pesquisa][descricao]" cols="30" rows="6" id="PesquisaDescricao"></textarea>
+          </div>
+          
+          <h3 class="classicLabelInupt">Período</h3>
+          <div class="row-datas">
+            <div class="input-wrapper">
+              <input 
+                class="inputSearch"
+                style="box-shadow: 0px 1px 2px rgba(10, 13, 18, 0.05);"
+                id="PesquisaDataDisponivel"
+                type="text"
+                placeholder="Data de início"
+              >
+            </div>
+            <div class="input-wrapper">
+              <input 
+                class="inputSearch"
+                style="box-shadow: 0px 1px 2px rgba(10, 13, 18, 0.05);"
+                name="data[Pesquisa][data_termino]"
+                id="PesquisaDataDisponivel"
+                type="text"
+                placeholder="Data de início"
+                id="PesquisaDataTermino"
+                required="required"
+              >
+            </div>
+          </div>
+          
+          <div class="availableCheckbox">
+              <input type="hidden" name="data[Pesquisa][ativo]" id="PesquisaAtivo_" value="0">
+              <input type="checkbox" name="data[Pesquisa][ativo]" checked="checked" value="1" id="PesquisaAtivo">
+              <label style="margin-left: 8px;" for="PesquisaAtivo">Disponível</label>
+          </div>
                 <fieldset>
-                    <legend class="classicLabelInupt">Enviar pesquisa para</legend>
-                    <input type="radio" name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara1" value="1" required="required">
-                    <label class="label-radio-input" for="PesquisaEnviarPara1">Só credenciados</label>
-                    <input style="color: #FF2B34;" type="radio" name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara0" value="0" checked="checked" required="required">
-                    <label for="PesquisaEnviarPara0">Todos confirmados</label>
+                    <p class="classicLabelInupt">Enviar pesquisa para</p>
+                    <div class="optionsToSend">
+                      <div class="sectionRadioInput">
+                        <input type="radio" name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara1" value="1" required="required">
+                        <label class="label-radio-input" for="PesquisaEnviarPara1">Só credenciados</label>
+                      </div>
+                      <div class="sectionRadioInput">
+                        <input style="color: #FF2B34;" type="radio" name="data[Pesquisa][enviar_para]" id="PesquisaEnviarPara0" value="0" checked="checked" required="required">
+                        <label for="PesquisaEnviarPara0">Todos confirmados</label>
+                      </div>
+                    </div>
                 </fieldset>
-              </div>
 
-                <div class="horizontal-line"></div>
 
                 <div class="action-row-questions" style="margin-top: 20px;"> 
                     <button class="classic-grey-button">
-                    Cancelar
+                    <a>Cancelar</a>
                   </button>
                   <button class="classic-red-button">Cancelar</button>
                 </div>
@@ -850,93 +834,9 @@
 
     
 
-      .pesquisa_edit {
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-      } 
-
-    .row-datas {
-      display: flex;
-      gap: 20px;
-      
-    }
-
-    .input-wrapper {
-      width: 25%; 
-      display: flex;
-      flex-direction: column;          
-    }
-
-    .inputSearch {
-      width: 100%;
-      border: 1px solid #D5D7DA;
-      border-radius: 8px;
-      padding: 8px;
-    }
+    
 
 
-    .calendar-icon {
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      opacity: 0.7;
-    }
-
-    .box .title {
-    background: none;
-    padding: 0px 0px 0px 15px;
-    }
-    .forms .input {
-    border: none;
-    }
-    .forms .input input {
-    background: none;
-    padding: 5px;
-    }
-    .mensagem {
-    margin: 20px 20px 0 20px;
-    }
-    
-    #PesquisaAtivo {
-        float:left;
-        margin-right:0
-    }
-    
-    .config_pesquisa .checkbox {
-        margin-left: -4px;
-    }
-    
-    .config_pesquisa input[type="radio"] {
-    
-        margin: 1px -1px 0px;
-        float: left;
-    }
-    
-    .availableCheckbox input{
-      color: #D9D9D9;
-    }
-
-    .optionsToSend label {
-      color: #4A4A4A;
-      font-weight: 400;
-      font-size: 0.75vh;
-      float: left;
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-    
-    .optionsToSend {
-        margin-top: -5px;
-    }
-    
-        .mensagem {
-            margin: 10px 0 0 0;
-        }
-    
     
     </style>
     
