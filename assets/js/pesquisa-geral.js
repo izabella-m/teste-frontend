@@ -79,34 +79,34 @@ if (!dados) {
   // Nome da pesquisa
   document.querySelector(".head-card h3").textContent = pesquisa.nome;
 
-  // Preencher data
-  const dataSpan = document.querySelector(
-    ".info-section .info-box:nth-child(1) .emphasis"
-  );
-  if (dataSpan) dataSpan.textContent = pesquisa.dataFim || "--";
+ // Preencher data
+const dataSpan = document.getElementById("dataPesquisa");
+if (dataSpan) {
+  dataSpan.textContent = pesquisa.dataFim || "--";
+}
 
-  // Preencher envio
-  const enviarSpan = document.querySelector(
-    ".info-section .info-box:nth-child(2) .emphasis"
-  );
-  if (enviarSpan) {
-    enviarSpan.textContent =
-      pesquisa.enviarPara === "1"
-        ? "Só participantes credenciados"
-        : "Todos confirmados";
-  }
+// Preencher envio
+const enviarSpan = document.getElementById("textoEnviarPara");
+if (enviarSpan) {
+  enviarSpan.textContent =
+    pesquisa.enviarPara === "1"
+      ? "Só participantes credenciados"
+      : "Todos confirmados";
+}
+
 
   // Disponibilidade
-  const disponibilidadeTexto = document.querySelector(
-    ".availability-tag p"
-  );
-  const circulo = document.querySelector(".cirlce-availability");
-
+  const tagDisp = document.querySelector(".availability-tag");
+  const tagIndisp = document.querySelector(".availability-tag-unavailable");
+  
   if (pesquisa.ativo) {
-    disponibilidadeTexto.textContent = "Disponível";
-    circulo.style.background = "#00C851";
+
+    tagDisp.style.display = "flex";
+    tagIndisp.style.display = "none";
   } else {
-    disponibilidadeTexto.textContent = "Indisponível";
-    circulo.style.background = "#FF4444";
+
+    tagDisp.style.display = "none";
+    tagIndisp.style.display = "flex";
   }
+  
 }
