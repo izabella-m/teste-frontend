@@ -12,29 +12,34 @@
   color: #414651;
 }
 
-.classic-grey-button {
+.classicGreyButton {
   border: #CDD1D9 solid 1px;
   border-radius: 8px;
   padding: 10px 25px 10px 25px;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #414651 !important;
 }
 
-.classic-red-button {
+.classicRedButton {
   background: #FF2B34;
   color: white;
   border: none;
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 600;
 }
 
-.classic-grey-button a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #414651;
+.horizontal-divider {
+  width: 100%;
+  color: #CCCCCC;
+  height: 1px;
+  border: 0.5px solid;
+  margin: 20px 0px 10px 0px;
 }
 
 .action-row-questions {
@@ -217,4 +222,55 @@ cursor: pointer;
 
 .mensagem {
   margin: 10px 0 0 0;
+}
+
+#ajax-loader {
+  background-color: #111;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1060;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#ajax-loader div {
+  display: block;
+  height: 10%;
+  left: 50%;
+  margin: -150px 0 0 -280px;
+  outline: medium none;
+  position: fixed;
+  top: 60%;
+  width: 560px;
+  z-index: 2050;
+}
+
+#ajax-loader span.ajax-loader-message {
+  display: none;
+  position: fixed;
+  background: #FCF8E3;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: -20px;
+  font-size: 12px;
+  color: #8a6d3b;
+  border: 1px solid #faebcc;
+}
+
+#img-ajax-load-center {
+  background-color: #000000;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.75;
+  -moz-opacity: 0.75;
+  filter: alpha(opacity=75);
 }
