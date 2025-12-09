@@ -1,0 +1,281 @@
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+.pesquisa_pergunta {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.head-card {
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.head-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #18181B;
+  margin-left: 10px;
+}
+
+.head-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  padding: 0 12px;
+}
+
+.label-info-box {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  color: #777777;
+}
+
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #71717A;
+  padding: 0%;
+  margin: 0px;
+  align-items: flex-start; 
+
+}
+
+.emphasis {
+  color: #18181B;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 35px;
+  background-color: #D3D3D3;
+}
+
+
+.cirlce-availability {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #66BB33;
+}
+
+
+.availability-tag p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #66BB33;
+  margin: 0;
+}
+
+.availability-tag {
+  width: 91px;
+  height: 24px;
+  background-color: #E7FFE1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+}
+
+
+.cirlce-availability-unavailable {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #6a6a6a;
+}
+
+.availability-tag-unavailable p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6a6a6a;
+  margin: 0;
+}
+
+.availability-tag-unavailable {
+  width: 91px;
+  height: 24px;
+  background-color: #c9cac9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+}
+
+.buttons-section button {
+  background-color: #F9FAFB;
+  box-sizing: border-box;
+  border: #CDD1D9 solid 1px;
+  border-radius: 8px;
+  padding: 10px 25px 10px 25px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #414651;
+}
+
+@media (max-width: 900px) {
+
+  .head-card {
+    padding: 15px;
+  }
+
+  .head-card h3 {
+    font-size: 1rem;
+  }
+
+  .head-info {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .info-section ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .availability-tag {
+    width: auto;
+    padding: 4px 10px;
+    height: auto;
+  }
+
+  .buttons-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons-section button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.questions-card {
+}
+
+.questions-card table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  border: 1px solid #EBEBEB;
+  overflow: hidden;
+}
+
+.questions-card table thead th {
+  background-color: #F5F5F5;
+  color: #4A4A4A;
+  text-align: left;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.questions-card table tbody td {
+  font-size: 0.75rem;
+  color: #4A4A4A;
+  padding: 12px 16px;
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.questions-card table tbody td:nth-child(2) {
+  text-align: right;
+}
+
+.questions-card table thead th.action-column {
+  text-align: right;
+}
+
+.questions-card table td,
+.questions-card table th {
+  border-right: none;
+}
+
+.questions-card table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.emphasis-number {
+  color: #4A4A4A;
+  color: #777777;
+}
+
+.label-question {
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-question {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 1rem;
+  border: 1px solid #D5D7DA;
+  border-radius: 8px;
+}
+
+.checkbox-area {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.checkbox-area label {
+  font-size: #4E5666;
+  padding-top: 8px;
+}
+
+
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.cancel-button {
+  background-color: #F9FAFB;
+  border: 1px solid #CDD1D9;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+}

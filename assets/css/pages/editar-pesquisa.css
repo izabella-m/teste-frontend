@@ -1,0 +1,110 @@
+.horizontal-line {
+  background-color: #CCCCCC;
+  height: 1px;
+  margin: 0px 10px 0px 10px;
+}
+
+.label-radio-input {
+  font-size: 0.75vh;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+
+.row-datas {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.input-wrapper {
+  width: 25%; 
+  display: flex;
+  flex-direction: column;          
+}
+
+.inputSearch {
+  width: 100%;
+  border: 1px solid #D5D7DA;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+
+.calendar-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.box .title {
+  background: none;
+  padding: 0px 0px 0px 15px;
+}
+.forms .input {
+  border: none;
+}
+.forms .input input {
+  background: none;
+  padding: 5px;
+}
+
+#PesquisaAtivo {
+  float:left;
+  margin-right:0
+}
+
+.config_pesquisa .checkbox {
+  margin-left: -4px;
+}
+
+.config_pesquisa input[type="radio"] {
+  margin: 1px -1px 0px;
+  float: left;
+}
+
+.availableCheckbox input{
+  color: #D9D9D9;
+}
+
+.optionsToSend {
+  display: flex;
+  margin: 0px;
+  gap: 20px;
+}
+
+.optionsToSend label {
+  color: #4A4A4A;
+  font-weight: 400;
+  font-size: 0.75vh;
+  margin: 0px;
+}
+
+.sectionRadioInput {
+  display: flex;
+  align-items: center; 
+  gap: 6px;
+}
+
+.optionsToSend label {
+  color: #4A4A4A;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.availableCheckbox label {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 22px;
+  color: #4E5666;
+}
+
+.availableCheckbox {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

@@ -1,82 +1,125 @@
-# Teste Front-end
-Este repositório contém o desafio técnico para a vaga de Front-end na Doity.
+# Teste Frontend — Doity Fork
 
-## 🎯 Objetivo  
-Desenvolver a interface da feature **Pesquisa de Satisfaçāo**, seguindo o layout, comportamento e orientações do projeto no Figma.
+Este projeto é uma fork do front-end de telas da plataforma  Doity , desenvolvida para u utilizando  HTML, CSS e boas práticas de arquiteturm teste técnico.O objetivo principal do projeto é estruturar telas estáticas com organização limpa, reaproveitamento de estilos e padronização visual entre as páginas.
 
 ---
 
-## 🔐 Acesso ao sistema (Doity)  
-Para acessar o ambiente do evento e visualizar a interface real, utilize:
+## Estrutura do Projeto
 
-- Usuário: tester.frontend@doity.com.br  
-- Senha: WLBh@z4ifg7Y9  
-
-Site de login: https://doity.com.br
-
----
-
-## 🧾 Links para testes reais de resposta  
-No link abaixo você encontrará um arquivo contendo links para simulação de respostas da pesquisa:
-
-Download do arquivo:  
-https://mega.nz/file/8dc0ULha#5JDXjQqIBJGJI2EAJTXeHI7lyZXMqLMZ-c8RomAak8k
-
-Esse arquivo deve ser utilizado para acessar o formulário para responder a pesquisa
-
----
-
-## 📹 Instruções em vídeo  
-- Vídeo 1: https://www.loom.com/share/e3d27ef081024fb68e710fa33f086e75  
-- Vídeo 2: https://www.loom.com/share/90569ea0774243fba6658e12dbea3e56
-- Vídeo 3: https://www.loom.com/share/e15f8a3f1da542449a489ea82b1b149f
-
----
-
-## 🎨 Design (Figma público)  
-Novo link do projeto:  
-https://www.figma.com/design/y9xEmcBtdeG0fWtVzmw7ya/Pesquisa-de-Satisfação?node-id=0-1&p=f&m=dev
-
-### 🔐 Credenciais para acesso ao Figma  
-- Usuário: selecao@doity.com.br  
-- Senha: Selecao@dev123
+```
+teste-frontend/
+│
+├── pagina.html            # Telas principais
+│
+├── assets/
+│   ├── css/
+│   │   ├── arquivos.css    # Arquivos css em comum
+│   │   ├── global.css      # Classes utilitárias globais
+│   │   ├── pages/
+│   │   │   ├── pagina2.css # Arquivos css específico de cada página
+│   │   │   ├── pagina3.css
+│   │   │   └── pagina4.css
+│   │   └── main.css        # Importa todos os CSS acima
+│   │
+│   ├── js/
+│   │   ├── arquivos.js   # Lógica presente em cada página 
+│   │   
+│   │
+│   ├── img/                # Imagens do projeto
+│   ├── icons/              # Ícones SVG
+│   └── fonts/              # Fontes externas
+│
+└── README.md
+```
 
 ---
 
-## 📚 Documentação adicional  
-- Guia da plataforma para criação de pesquisa:  
-  https://ajuda.doity.com.br/pt-br/article/como-criar-a-pesquisa-de-satisfacao-para-o-evento-16cnizt/
+## Estilização
+
+O arquivo **main.css** centraliza todos os imports:
+
+```css
+@import '960.css';
+@import 'admin_responsive.css';
+@import 'admin_text.css';
+@import 'admin_v2.css';
+@import 'admin.css';
+@import 'bootstrap-tooltip.css';
+@import 'croppie.css';
+@import 'datepicker.css';
+@import 'doitystrap.css';
+```
+
+Isso permite que cada HTML importe  **apenas um CSS** , mantendo organização:
+
+```html
+<link rel="stylesheet" href="assets/css/main.css">
+```
+
+### Estilos globais
+
+Classes reutilizáveis estão definidas em `global.css`.
+
+Exemplos: `.btn`, `.text-center`, `.container`, `.mt-20` etc.
 
 ---
 
-## 🧪 Entrega do teste  
-A entrega será feita pelo GitHub.
+## Funcionalidades
 
-### Como enviar:
-1. Faça um **Fork** deste repositório  
-2. Desenvolva a implementação usando **HTML + CSS + JavaScript e/ou jQuery** (obrigatório)  
-3. Crie um arquivo `README.md` dentro do seu repositório contendo:  
-   - instruções de instalação (se houver)  
-   - como rodar o projeto  
-   - link do vídeo explicativo  
-4. Grave um vídeo (Loom, Streamable, ou YouTube não listado) explicando:  
-   - o resultado final  
-   - como estruturou o código  
-   - problemas encontrados e como resolveu  
-5. Envie o link do seu fork para avaliação
+* ✔️ Organização de pastas seguindo boas práticas
+* ✔️ Ícones e imagens servidos via `assets/`
+* ✔️ Import centralizado via `main.css`
+* ✔️ Estrutura sem frameworks (somente HTML + CSS + JS puro)
+* ✔️ Layouts baseados em referências reais do site **Doity**
 
 ---
 
-## 🧩 O que será avaliado
-- Fidelidade ao projeto de UX  
-- Organização do código  
-- Semântica do HTML  
-- Estrutura e reaproveitamento de CSS  
-- Uso claro e funcional de JS/jQuery  
-- Funcionalidade da interface  
+## 🚀 Como executar o projeto
+
+1. Faça o clone:
+
+```bash
+git clone https://github.com/izabella-m/teste-frontend.git
+```
+
+2. Entre na pasta:
+
+```bash
+cd teste-frontend
+```
+
+3. Abra qualquer página no navegador (por exemplo):
+
+```bash
+open criar-pesquisa.html
+```
+
+Ou use a extensão *Live Server* do VSCode.
 
 ---
 
-## 💬 Suporte  
-Se houver qualquer dúvida ou dificuldade (acesso a Doity, Figma, vídeos ou arquivo de links), entre em contato:  
-📩 lucyan@doity.com.br
+## Tecnologias Utilizadas
+
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+* Organização modular de estilos
+* Padrões de design de UI básicos
+
+---
+
+## Padrões de commit usados
+
+* `feat:` nova funcionalidade
+* `fix:` correção de bug
+* `style:` formatação, remoção de espaços
+* `refactor:` refatoração de código
+* `chore:` manutenção geral, remover arquivos inutilizados
+
+---
+
+## Vídeo
+
+Link: https://youtu.be/UIzIX-d0VH8
+
+[Link Aqui](https://youtu.be/UIzIX-d0VH8)
