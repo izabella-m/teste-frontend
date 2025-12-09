@@ -215,6 +215,10 @@ body {
   text-align: right;
 }
 
+.questions-card table thead th.action-column {
+  text-align: right;
+}
+
 .questions-card table td,
 .questions-card table th {
   border-right: none;
