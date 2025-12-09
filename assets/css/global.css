@@ -27,7 +27,7 @@
   background: #FF2B34;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
@@ -45,6 +45,12 @@
 .action-row-questions {
   display: flex;
   justify-content: space-between;
+}
+
+.action-row-register {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;  
 }
 
 #modal-info-feedback-pos-evento{
