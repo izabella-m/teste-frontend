@@ -90,8 +90,6 @@
           </li>
           <li class="break"></li>
 
-
-
         </ul>
 
       </div>
@@ -746,7 +744,6 @@
                 </div>
 
 
-
                 <div id="modal-help" class="contrato modal modal-large">
 
                   <div class="modal-header" style="padding: 14px 15px;">
@@ -830,8 +827,6 @@
                         <a href="https://api.doity.com.br/public/integracoes">Integrações</a>
                       </li>
 
-
-
                       <li>
                         <a href="https://doity.com.br/area-do-participante/painel">Área do Participante</a>
                       </li>
@@ -887,8 +882,6 @@
 
           </div>
 
-
-
           <div style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto;">
             <div class="box pesquisa_resultado">
 
@@ -898,152 +891,106 @@
               </div>
 
               <div class="content forms">
-
-                <div class="mensagem">
-                </div>
-
-                <div class="actions">
-                  <ul>
-                    <li><a href="https://doity.com.br/admin/pesquisas/index/279481">Configurar pesquisa</a></li>
-                    <li><a href="https://doity.com.br/admin/pesquisas_resultados/resultado_excel/1402">Baixar
-                        resultados</a></li>
-                  </ul>
-                </div>
-                <div class="painel-info-artigos">
-
-                  <div class="dados_pesquisa">
-                    <h1>Nome: <strong>Pesquisa de Qualidade do Evento</strong></h1>
-                    <h1>Data da pesquisa: <strong>01/12/2025</strong></h1>
-                    <h1><strong>1 Participante respondeu </strong></h1>
-                  </div>
-
-
-                  <div id="graficos_pesquisa">
-
-
-
-                    <div id="content-grafico">
-                      <h1>1 - </h1>
-                      <div id="piechart1" style="width: 700x; height: 400px;"></div>
+                <div class="head-card">
+                  <h3>Nome da pesquisa</h3>
+                  <div class="head-info">
+                    <div class="info-section">
+  
+                      <div class="info-box">
+                        <span class="label-info-box">Data:</span>
+                        <span id="dataPesquisa" class="emphasis">12/02/2025</span>
+                      </div>
+  
+                      <div class="vertical-divider"></div>
+  
+                      <div class="info-box">
+                        <span class="label-info-box">Enviar pesquisa para:</span>
+                        <span id="textoEnviarPara" class="emphasis">Só participantes credenciados</span>
+                      </div>
+  
+                      <div class="vertical-divider"></div>
+  
+                      <div class="totalResponses">350 respostas</div>
 
 
                     </div>
-                    <div id="content-grafico">
-                      <h1>2 - O conteúdo apresentado foi relevante para você?</h1>
-                      <div id="piechart2" style="width: 700x; height: 400px;"></div>
-
-
-                    </div>
-                    <div id="content-grafico">
-                      <h1>3 - </h1>
-                      <div id="piechart3" style="width: 700x; height: 400px;"></div>
-
-
-                    </div>
-                    <div id="content-grafico">
-                      <h1>4 - Como você avalia a organização do evento?</h1>
-                      <div id="piechart4" style="width: 700x; height: 400px;"></div>
-
-
-                    </div>
-                    <div id="content-grafico">
-                      <h1>5 - Pergunta exemplo</h1>
-                      <div id="piechart5" style="width: 700x; height: 400px;"></div>
-
-
+                    <div class="buttons-section">
+                      <button>Baixar relatório</button>
                     </div>
                   </div>
+                </div>
 
-                  <div class="comentarios-pesquisa">
-                    <a href="#" class="mostra-comentarios">Comentários dos participantes</a>
-                    <div class="comentarios-participantes-pesquisa">
-                      <table class="table table-striped">
-                        <tbody>
-                          <tr>
-                            <td>1 - Tudo ok!</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <div class="result-search-card">
+                  <div class="result-search-card-first-line">
+                    <div class="question-search-card">
+                      <p><b>1.</b></p>
+                      <p>Você gostou do evento?</p>
+                    </div>
+                
+                    <div style="display:flex;flex-direction:column;align-items:center;">
+                      <p class="approval-rate text-excelente">50%</p>
+                      <div class="tooltip-approval-rate" style="background:#66BB33;">
+                        Excelente
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="result-search-card-second-line">
+                      <div class="line-progress">
+                        <div class="progress-bar-color-excelente" style="width:50%"></div>
+                      </div>
+                      <div class="numbers-results">
+                        <p class="name-numbers-results">Excelente</p>
+                        <p class="number-people">20</p>
+                      </div>
+                    </div>
+                    <div class="result-search-card-second-line">
+                      <div class="line-progress">
+                        <div class="progress-bar-color-bom" style="width:25%"></div>
+                      </div>
+                      <div class="numbers-results">
+                        <p class="name-numbers-results">Bom</p>
+                        <p class="number-people">10</p>
+                      </div>
+                    </div>
+                    <div class="result-search-card-second-line">
+                      <div class="line-progress">
+                        <div class="progress-bar-color-regular" style="width:15%"></div>
+                      </div>
+                      <div class="numbers-results">
+                        <p class="name-numbers-results">Regular</p>
+                        <p class="number-people">6</p>
+                      </div>
+                    </div>
+                    <div class="result-search-card-second-line">
+                      <div class="line-progress">
+                        <div class="progress-bar-color-ruim"  style="width:8%"></div>
+                      </div>
+                      <div class="numbers-results">
+                        <p class="name-numbers-results">Ruim</p>
+                        <p class="number-people">3</p>
+                      </div>
+                    </div>
+                    <div class="result-search-card-second-line">
+                      <div class="line-progress">
+                        <div class="progress-bar-color-pessimo" style="width:2%"></div>
+                      </div>
+                      <div class="numbers-results">
+                        <p class="name-numbers-results">Péssimo</p>
+                        <p class="number-people">1</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
               </div>
-
             </div>
-
-
-
-            <style type="text/css">
-              @media print {
-
-                .w-header {
-                  display: none;
-                }
-
-                .holder-left {
-                  display: none;
-                }
-
-                .holder-parent {
-                  border: none;
-                }
-
-                .breadcrumb {
-                  display: none;
-                }
-
-                .actions {
-                  display: none;
-                }
-
-
-                .painel-info-artigos {
-                  width: 100%;
-                  padding: 0;
-                  margin: 0;
-                }
-
-                .holder {
-                  width: 100%;
-                }
-
-                .holder .box {
-                  margin: 0;
-                }
-
-                .container {
-                  width: 100%;
-                  margin: 0;
-                  padding: 0;
-
-                }
-
-                .painel-info-artigos {
-                  border: none;
-                }
-
-                #content-grafico {
-
-                  page-break-inside: avoid;
-
-
-                }
-
-                #content-grafico h1 {
-
-                  padding-top: 40px;
-
-                }
-
-                .top .split:nth-child(2) {
-                  display: none;
-                }
-
-
-              }
-            </style>
           </div>
+
+          <div class="box pesquisa_resultado" style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto;">
+            <h2>Comentários</h2>
+          </div>
+
           <div class="footer">
             <div id="footer">
 
@@ -1055,12 +1002,6 @@
               <p><a href="https://ajuda.doity.com.br/" target="_blank">Central de Ajuda</a>
                 - <a href="#">Entre em Contato</a></p>
               <p></p>
-
-
-
-
-
-
 
 
             </div>
@@ -1118,12 +1059,11 @@
 
         <a href="#" id="responder-mais-tarde-feedback-pos-modal">Responder Mais Tarde</a>
       </div>
-
-
     </div>
-
   </div>
+  <div id="cards-container"></div>
 
+  <script src="assets/js/resultados-pesquisa.js"></script>
 
 </body>
 
