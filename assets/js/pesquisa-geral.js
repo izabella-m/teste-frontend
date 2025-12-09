@@ -21,9 +21,13 @@ function renderPergunta(texto) {
     <td data-th="Nome">${texto}</td>
 
     <td data-th="Ações" class="acoes">
-      <span class="green action-edit">Editar</span>
+      <span class="green action-edit">
+        <img src="assets/icons/Pen-line.svg" style="cursor: pointer; width: 18px; height: 18px; color: #4A4A4A;"/>
+      </span>
       &nbsp;
-      <span class="red action-delete">Excluir</span>
+      <span class="red action-delete">
+        <img src="assets/icons/trashIcon.svg" style="cursor: pointer; width: 18px; height: 18px; color: #4A4A4A; margin-right: 15px;"/>
+      </span>
     </td>
   `;
 
@@ -65,6 +69,16 @@ confirmBtn.addEventListener("click", function () {
   form.style.display = "none";
   addBtn.style.display = "block";
 });
+
+tbody.addEventListener("click", function (event) {
+  const botaoDelete = event.target.closest(".action-delete");
+
+  if (botaoDelete) {
+    const tr = botaoDelete.closest("tr");
+    if (tr) tr.remove();
+  }
+});
+
 
 console.log("Carregando dados da pesquisa...");
 
