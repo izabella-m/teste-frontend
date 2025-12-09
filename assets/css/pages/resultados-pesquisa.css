@@ -17,6 +17,15 @@
   margin: 0px;
 }
 
+.total-responses {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  color: #18181B;
+  margin-left: 10px;
+}
+
 .question-search-card p {
   font-family: Inter;
   font-weight: 400;
